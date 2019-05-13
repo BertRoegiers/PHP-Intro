@@ -9,16 +9,39 @@
 </head>
 <body>
 
+ <!--   <ul class="nav nav-variableValue active"
+        <li>POST</li>
+        <li>GET</li>
+    </ul>
+-->
+
+<p>
 <?php
     echo $_POST["favouriteTvShows"];
 ?>
 </p>
+
 
 <p>
 <?php
     echo $_POST["favouriteMovies"];
 ?>
 </p>
+
+
+<p>
+<?php
+    echo $_GET["favCountry"];
+?>
+</p>
+
+
+<p>
+<?php
+    echo $_GET["badMovie"];
+?>
+</p>
+
 
 </body>
 </html>
