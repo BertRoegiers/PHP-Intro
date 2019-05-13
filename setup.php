@@ -15,9 +15,9 @@
     <form action ="result.php"  method="post">
         What are your favourite Tv-shows :
         <input type="text" name="favouriteTvShows"><br>
-        <input type="text" name="favouriteMovies"><br>
 
         What are your favourite movies :
+        <input type="text" name="favouriteMovies"><br>
 
         <input type="submit">
     </form>

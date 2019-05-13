@@ -9,25 +9,16 @@
 </head>
 <body>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid eveniet possimus quam voluptates. Aut cupiditate dolorum explicabo itaque molestias nihil odit recusandae repellat suscipit ut. Aliquam maiores pariatur tempore?</p>
-
-<p>
-    <?php
-
-    echo $_POST["favouriteMovies"];
-
-    ?>
-
-
-</p>
-<p>
-    <?php
-
-
+<?php
     echo $_POST["favouriteTvShows"];
-    ?>
-
-
+?>
 </p>
+
+<p>
+<?php
+    echo $_POST["favouriteMovies"];
+?>
+</p>
+
 </body>
 </html>
