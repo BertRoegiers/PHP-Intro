@@ -16,8 +16,6 @@
     <button class="tablinks" onclick="wichVar(event, 'POST')">POST</button>
     <button class="tablinks" onclick="wichVar"(event, 'GET')">GET</button>
 
-
-
 </div>
 
 
@@ -25,25 +23,46 @@
 
 
 
-<!--<p>
-    <?php /*echo $_POST["favouriteTvShows"];
-    */?>
+
+<p>
+    <?php echo $_POST["favouriteTvShows"];
+    ?>
 </p>
 
 <p>
-    <?php /*echo $_POST["favouriteMovies"];
-    */?>
+    <?php echo $_POST["favouriteMovies"];
+    ?>
 </p>
 
 <p>
-    <?php /*echo $_GET["favCountry"];
-    */?>
+    <?php echo $_GET["favCountry"];
+    ?>
 </p>
 
 <p>
-    <?php /*echo $_GET["badMovie"];
-    */?>
-</p>-->
+    <?php echo $_GET["badMovie"];
+    ?>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 
