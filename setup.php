@@ -14,7 +14,7 @@
 
 
 
-    <form id="best" action ="result.php"  method="post">
+    <form id="best" action ="result.php?getvar=xyz"  method="post">
 
         What are your favourite Tv-shows :
         <input type="text" name="favouriteTvShows"><br>
@@ -24,7 +24,7 @@
 
         <input type="submit">
 
-    </form>
+   </form>
 
 
     <form id="worst" action="result.php" method="get">
