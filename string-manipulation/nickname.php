@@ -11,13 +11,35 @@
 <body>
 
 
-    <form id="form">
-        <input type="text">
-        <input type="submit">
+    <form id="form" action="nickname.php" method="get">
+        <fieldset>
+            <legend>Cool Nickname Generator</legend>
+                <input type="text" name="Inputfield">
+                <input type="submit">
+        </fieldset>
     </form>
 
 
+    <?php $inputfield = $_GET["Inputfield"];
+       $reverse = strrev($inputfield);
+       echo $reverse;
 
+    ?>
+    <?php $capitalize = strtoupper($inputfield);
+        echo $capitalize;
+     ?>
+
+    <?php $normalize = strrev($reverse);
+        echo $normalize;
+     ?>
+
+    <?php $a= "--";
+        echo "{$a}$inputfield{$a}";
+    ?>
+
+    <?php $b= "x";
+        echo "{$b}$inputfield";
+     ?>
 
 
 
