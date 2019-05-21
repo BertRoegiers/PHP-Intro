@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
@@ -26,23 +27,31 @@ $array =  [
 ];
 ?>
 
-<?php   if (count($array) > 0): ?>
-    <table id="table">
-        <thead>
-        <thead>
-        <th><?php echo implode('</th><th>', array_keys(current($array))); ?>
-        </th>
-        </thead>
-        <tbody>
-        <?php foreach ($array as $row): array_map('htmlentities', $row); ?>
-            <tr>
-                <td><?php echo implode('</td><td>', $row); ?>
-                </td>
-            </tr>
+
+<table>
+
+    <tr>
+        <th>Tv shows</th>
+        <th>Rating</th>
+    </tr>
+        <?php foreach($array as $arr): ?>
+        <?php $url = "https://www.google.com/search?q=" . str_replace(" ","-",$arr["tv-show"]); ?>
+    <tr>
+        <td><a href=<?php echo $url ?>><?php echo $arr["tv-show"]; ?>
+            </a></td>
+        <td>
+            <?php for ($i=0; $i < $arr["rating"]; $i++): ?>
+                <i class="fas fa-star"></i>
+            <?php endfor; ?>
+        </td>
+    </tr>
         <?php endforeach; ?>
-        </tbody>
-    </table>
-<?php endif; ?>
+</table>
+
+
+
+
+
 
 
 
@@ -50,14 +59,3 @@ $array =  [
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
