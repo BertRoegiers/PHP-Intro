@@ -41,6 +41,22 @@
         echo "{$b}$inputfield";
      ?>
 
+    <?php
+        $a_z = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        $rand_letter = $a_z[rand(0,61)];
+        $rand_letter2 = $a_z[rand(0,61)];
+        /*echo $rand_letter;
+        echo $rand_letter2;*/
+        echo "{$rand_letter}{$rand_letter2}$inputfield";
+        echo " ";
+        echo "[{$rand_letter}{$rand_letter2}]$inputfield";
+     ?>
+
+    <?php $randomChar = $inputfield[rand];
+        echo $randomChar;
+     ?>
+
+
 
 
 </body>
