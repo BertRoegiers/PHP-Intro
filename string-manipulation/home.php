@@ -10,10 +10,39 @@
 <body>
 
 
+<?php
+
+    $motors = [
+        ["brand" => "yamaha", "power" => "120pk"],
+        ["brand" => "ducati", "power" => "170pk"],
+        ["brand" => "motoguzzi", "power" => "140pk"]
+    ];
+
+    class Motorcycle
+    {
+        public $brand;
+        public $power;
+
+        public function __construct($moto)
+        {
+            $this->brand = $moto["brand"];
+            $this->power = $moto["power"];
+        }
+    }
+
+
+    $mymotor = new Motorcycle($motors[0]);
+        echo ($mymotor->brand);
+
+    $newmotor=["brand"=>"honda", "power"=>"100pk"];
+
+    array_push($motors,$newmotor);
+        print_r($motors);
 
 
 
 
+    ?>
 
 
 
