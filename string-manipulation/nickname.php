@@ -52,8 +52,12 @@
         echo "[{$rand_letter}{$rand_letter2}]$inputfield";
      ?>
 
-    <?php $randomChar = $inputfield[rand];
-        echo $randomChar;
+    <?php
+        for ($i=0, $c=strlen($inputfield); $i<$c; $i++)
+            $inputfield[$i] = (rand(0, 100) > 50
+            ? strtoupper($inputfield[$i])
+            : strtolower($inputfield[$i]));
+        echo $inputfield;
      ?>
 
 
