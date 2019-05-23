@@ -1,3 +1,4 @@
+<?php setcookie ("name",time() + (86400 * 30)); ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -32,15 +33,27 @@
 
 
     $mymotor = new Motorcycle($motors[0]);
-        echo ($mymotor->brand);
+        /*echo ($mymotor->brand);*/
 
     $newmotor=["brand"=>"honda", "power"=>"100pk"];
 
-    array_push($motors,$newmotor);
+    /*array_push($motors,$newmotor);
+        print_r($motors);*/
+
+    /*print_r(array_slice($motors,2));*/
+
+    /*unset($motors[2]);
+        echo "<pre>";
         print_r($motors);
+        echo "</pre>";*/
 
 
 
+
+    $_COOKIE["name"]=json_encode($mymotor);
+
+    $cookie = json_decode($_COOKIE["name"]);
+        print_r($cookie);
 
     ?>
 
