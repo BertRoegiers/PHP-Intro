@@ -1,20 +1,30 @@
 <?php
 
-
+session_start();
 
 class Blackjack {
-    public $playesScore = 0;
-    public $playerTotal = 0;
-    public $dealerScore = 0;
-    public $dealerTotal = 0;
+    public $score = 0;
+    public $total = 0;
 
-    public function Hit() {
-       $newCard= random_int(1, 11);
-       $playerScore += $newCard;
-       return $playerScore;
+    public function __construct($score, $total)
+    {
+        $this->score = $score;
+        $this->total = $total;
 
     }
-    public function Stand() {
+
+
+    public function Hit()
+    {
+
+       $newCard= random_int(1, 11);
+       $score += $newCard;
+       return $score;
+
+    }
+
+    public function Stand()
+    {
         // players Turn, save total points
 
         //dealer turn
@@ -30,5 +40,8 @@ class Blackjack {
 
 }
 
-$test = new Blackjack;
-echo $test->Hit();
+$player = new Blackjack(0, 0);
+echo $player->Hit();
+
+$dealer = new Blackjack(0, 0);
+echo $dealer->Hit();
