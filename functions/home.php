@@ -9,6 +9,8 @@
 </head>
 <body>
 
+<?php require("security.php");
+include("functions.php"); ?>
 
 <div id="generate object">
     <button>Generate object</button>
